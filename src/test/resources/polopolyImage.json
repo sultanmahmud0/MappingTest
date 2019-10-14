@@ -1,1 +1,491 @@
-{"eventId":16160539,"contentId":"1.1593165","commitId":1569819292,"_data":{"id":"policy:1.1593165","version":"policy:1.1593165:1569819292","meta":{"modificationTime":"1569819321000","originalCreationTime":"1569819252000"},"aspects":{"contentData":{"data":{"altText":"This is alt text","_type":"com.atex.standard.image.ImageContentDataBean","description":"Klimakrisa­ gjev unge ­psykiske ­lidingar","photographer":"Rafiq Maqbool","title":"485260_NP.jpg","url":"/image/policy:1.1593165.1569819292/485260.jpg?f=default&h=2220&w=3304","status":"published"},"customAttributes":{}},"p.InsertionInfo":{"data":{"_type":"p.InsertionInfo","securityParentId":"contentid/policy:2.599","associatedSites":"contentid/policy:2.599"},"customAttributes":{}},"atex.Metadata":{"data":{"metadata":{"dimensions":[]},"_type":"atex.Metadata","taxonomyIds":"vl.no"},"customAttributes":{}},"p.Inbox":{"data":{"_type":"p.Inbox","showInInbox":"false"},"customAttributes":{}},"atex.Files":{"data":{"_type":"atex.Files","files":{"485260.jpg_type":"com.atex.onecms.content.ContentFileInfo","485260.jpg":{"_type":"com.atex.onecms.content.ContentFileInfo","fileUri":"content://imageid485260/485260-jpg","filePath":"485260.jpg"}}},"customAttributes":{}},"atex.Image":{"data":{"filePath":"485260.jpg","_type":"atex.Image","width":"3304","height":"2220"},"customAttributes":{}},"atex.Aliases":{"data":{"aliases":{"externalId_type":"java.lang.String","externalId":"imageid485260"},"_type":"atex.Aliases"},"customAttributes":{}},"p.ContentState":{"data":{"deleted":"false","_type":"p.ContentState","online":"true","moderationState":"pubp"},"customAttributes":{}},"standard.Image.MetadataTags":{"data":{"imageWidth":"3304","_type":"com.atex.standard.image.exif.MetadataTags","fileUri":"content://imageid485260/485260-jpg","description":"A girl holds a globe as she participates in a protest in Mumbai, India, Friday, Sept. 27, 2019. Protestors gathered in response to a day of worldwide demonstrations calling for action to guard against climate change. (AP Photo/Rafiq Maqbool)","title":"a43f7245-768b-43f5-902c-9ad78d054820","byline":"Rafiq Maqbool","imageHeight":"2220","tags":{"Exif Thumbnail_type":"java.util.LinkedHashMap","Exif Thumbnail":{"_type":"java.util.LinkedHashMap","Resolution Unit_type":"java.lang.Integer","Resolution Unit":2,"Thumbnail Length_type":"java.lang.Long","Thumbnail Length":9435,"Compression_type":"java.lang.Integer","Compression":6,"Thumbnail Offset_type":"java.lang.Long","Thumbnail Offset":1640,"X Resolution_type":"java.lang.String","X Resolution":"72 dots per inch","Y Resolution_type":"java.lang.String","Y Resolution":"72 dots per inch"},"IPTC_type":"java.util.LinkedHashMap","IPTC":{"_type":"java.util.LinkedHashMap","Category_type":"java.lang.String","Category":"I","Country/Primary Location Code_type":"java.lang.String","Country/Primary Location Code":"IND","By-line_type":"java.lang.String","By-line":"Rafiq Maqbool","Caption/Abstract_type":"java.lang.String","Caption/Abstract":"A girl holds a globe as she participates in a protest in Mumbai, India, Friday, Sept. 27, 2019. Protestors gathered in response to a day of worldwide demonstrations calling for action to guard against climate change. (AP Photo/Rafiq Maqbool)","City_type":"java.lang.String","City":"Mumbai","Object Name_type":"java.lang.String","Object Name":"a43f7245-768b-43f5-902c-9ad78d054820","Original Transmission Reference_type":"java.lang.String","Original Transmission Reference":"RMX116","Source_type":"java.lang.String","Source":"AP","Credit_type":"java.lang.String","Credit":"AP","Copyright Notice_type":"java.lang.String","Copyright Notice":"Copyright 2019 The Associated Press. All rights reserved.","Country/Primary Location Name_type":"java.lang.String","Country/Primary Location Name":"IND","Headline_type":"java.lang.String","Headline":"India Climate Protest","Time Created_type":"java.lang.String","Time Created":"11:02:12+0000","Urgency_type":"java.lang.Integer","Urgency":53,"Application Record Version_type":"java.lang.Integer","Application Record Version":4,"Date Created_type":"java.lang.String","Date Created":"2019:09:27"},"Exif SubIFD_type":"java.util.LinkedHashMap","Exif SubIFD":{"_type":"java.util.LinkedHashMap","Lens Model_type":"java.lang.String","Lens Model":"EF24-105mm f/4L IS USM","Exif Version_type":"java.lang.String","Exif Version":"2.30","Components Configuration_type":"java.lang.String","Components Configuration":"YCbCr","FlashPix Version_type":"java.lang.String","FlashPix Version":"1.00","Focal Plane X Resolution_type":"java.lang.String","Focal Plane X Resolution":"487/1920000 inches","Sub-Sec Time Original_type":"java.lang.String","Sub-Sec Time Original":"94","Focal Length_type":"java.lang.String","Focal Length":"105 mm","Subject Distance_type":"java.lang.String","Subject Distance":"2.72 metres","Sub-Sec Time Digitized_type":"java.lang.String","Sub-Sec Time Digitized":"94","Date/Time Original_type":"java.lang.String","Date/Time Original":"2019:09:27 16:32:12","Shutter Speed Value_type":"java.lang.String","Shutter Speed Value":"1/663 sec","Focal Plane Resolution Unit_type":"java.lang.Integer","Focal Plane Resolution Unit":2,"Color Space_type":"java.lang.Integer","Color Space":1,"F-Number_type":"java.lang.String","F-Number":"f/4.0","Date/Time Digitized_type":"java.lang.String","Date/Time Digitized":"2019:09:27 16:32:12","Sensitivity Type_type":"java.lang.Integer","Sensitivity Type":2,"Exposure Program_type":"java.lang.Integer","Exposure Program":3,"Flash_type":"java.lang.Integer","Flash":16,"Aperture Value_type":"java.lang.String","Aperture Value":"f/4.0","User Comment_type":"java.lang.String","User Comment":"","Exposure Time_type":"java.lang.String","Exposure Time":"1/640 sec","ISO Speed Ratings_type":"java.lang.Integer","ISO Speed Ratings":400,"Recommended Exposure Index_type":"java.lang.Long","Recommended Exposure Index":400,"Exif Image Width_type":"java.lang.Long","Exif Image Width":3304,"Metering Mode_type":"java.lang.Integer","Metering Mode":5,"Body Serial Number_type":"java.lang.String","Body Serial Number":"053024002609","Exposure Bias Value_type":"java.lang.String","Exposure Bias Value":"-2/3 EV","Focal Plane Y Resolution_type":"java.lang.String","Focal Plane Y Resolution":"486/1920000 inches","Camera Owner Name_type":"java.lang.String","Camera Owner Name":"","Lens Specification_type":"java.lang.String","Lens Specification":"24-105mm","Lens Serial Number_type":"java.lang.String","Lens Serial Number":"000050e8b7","Max Aperture Value_type":"java.lang.String","Max Aperture Value":"f/4.0","Exposure Mode_type":"java.lang.Integer","Exposure Mode":0,"Scene Capture Type_type":"java.lang.Integer","Scene Capture Type":0,"Custom Rendered_type":"java.lang.Integer","Custom Rendered":0,"Exif Image Height_type":"java.lang.Long","Exif Image Height":2220,"Sub-Sec Time_type":"java.lang.String","Sub-Sec Time":"94","White Balance Mode_type":"java.lang.Integer","White Balance Mode":0},"Exif IFD0_type":"java.util.LinkedHashMap","Exif IFD0":{"_type":"java.util.LinkedHashMap","Artist_type":"java.lang.String","Artist":"Rafiq Maqbool","Image Description_type":"java.lang.String","Image Description":"A girl holds a globe as she participates in a protest in Mumbai, India, Friday, Sept. 27, 2019. Protestors gathered in response to a day of worldwide demonstrations calling for action to guard against climate change. (AP Photo/Rafiq Maqbool)","Date/Time_type":"java.lang.String","Date/Time":"2019:09:27 19:02:24","Make_type":"java.lang.String","Make":"Canon","Samples Per Pixel_type":"java.lang.Integer","Samples Per Pixel":3,"YCbCr Positioning_type":"java.lang.Integer","YCbCr Positioning":2,"Image Height_type":"java.lang.Integer","Image Height":3840,"Orientation_type":"java.lang.Integer","Orientation":1,"X Resolution_type":"java.lang.String","X Resolution":"300 dots per inch","Image Width_type":"java.lang.Integer","Image Width":5760,"Photometric Interpretation_type":"java.lang.Integer","Photometric Interpretation":2,"Resolution Unit_type":"java.lang.Integer","Resolution Unit":2,"Model_type":"java.lang.String","Model":"Canon EOS 5D Mark III","Software_type":"java.lang.String","Software":"Adobe Photoshop CS5.1 Macintosh","Bits Per Sample_type":"java.lang.String","Bits Per Sample":"8 8 8 bits/component/pixel","Y Resolution_type":"java.lang.String","Y Resolution":"300 dots per inch"},"JPEG_type":"java.util.LinkedHashMap","JPEG":{"_type":"java.util.LinkedHashMap","Component 3_type":"java.lang.String","Component 3":"Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert","Compression Type_type":"java.lang.Integer","Compression Type":0,"Data Precision_type":"java.lang.Integer","Data Precision":8,"Number of Components_type":"java.lang.Integer","Number of Components":3,"Component 2_type":"java.lang.String","Component 2":"Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert","Component 1_type":"java.lang.String","Component 1":"Y component: Quantization table 0, Sampling factors 1 horiz/1 vert","Image Height_type":"java.lang.Integer","Image Height":2220,"Image Width_type":"java.lang.Integer","Image Width":3304},"XMP_type":"java.util.LinkedHashMap","XMP":{"_type":"java.util.LinkedHashMap","Create Date_type":"java.lang.String","Create Date":"2019-09-27T11:02:12","Metadata Date_type":"java.lang.String","Metadata Date":"2019-09-27T13:45:18+00:00","Modify Date_type":"java.lang.String","Modify Date":"2019-09-27T13:45:18+00:00","XMP Value Count_type":"java.lang.Integer","XMP Value Count":33,"Rating_type":"java.lang.Double","Rating":3},"JFIF_type":"java.util.LinkedHashMap","JFIF":{"_type":"java.util.LinkedHashMap","Resolution Units_type":"java.lang.Integer","Resolution Units":1,"Version_type":"java.lang.Integer","Version":257,"Thumbnail Height Pixels_type":"java.lang.Integer","Thumbnail Height Pixels":0,"Thumbnail Width Pixels_type":"java.lang.Integer","Thumbnail Width Pixels":0,"X Resolution_type":"java.lang.Integer","X Resolution":300,"Y Resolution_type":"java.lang.Integer","Y Resolution":300},"Photoshop_type":"java.util.LinkedHashMap","Photoshop":{"_type":"java.util.LinkedHashMap"},"Interoperability_type":"java.util.LinkedHashMap","Interoperability":{"_type":"java.util.LinkedHashMap","Interoperability Version_type":"java.lang.String","Interoperability Version":"1.00","Interoperability Index_type":"java.lang.String","Interoperability Index":"Recommended Exif Interoperability Rules (ExifR98)"}}},"customAttributes":{}},"atex.ImageEditInfo":{"data":{"flipHorizontal":"false","rotation":"0","pixelations":[],"_type":"atex.ImageEditInfo","flipVertical":"false","crops":{"4x5_type":"com.atex.onecms.image.CropInfo","4x5":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":2220,"width":1778,"x":711,"y":0},"imageFormat":{"aspectRatio":{"height":5,"width":4},"name":"4x5"}},"16x9_type":"com.atex.onecms.image.CropInfo","16x9":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":1860,"width":3304,"x":0,"y":207},"imageFormat":{"aspectRatio":{"height":9,"width":16},"name":"16x9"}},"8x3_type":"com.atex.onecms.image.CropInfo","8x3":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":1238,"width":3304,"x":0,"y":276},"imageFormat":{"aspectRatio":{"height":3,"width":8},"name":"8x3"}},"84x71_type":"com.atex.onecms.image.CropInfo","84x71":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":2220,"width":2627,"x":316,"y":0},"imageFormat":{"aspectRatio":{"height":71,"width":84},"name":"84x71"}},"1x1_type":"com.atex.onecms.image.CropInfo","1x1":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":2220,"width":2222,"x":504,"y":0},"imageFormat":{"aspectRatio":{"height":1,"width":1},"name":"1x1"}},"15x13_type":"com.atex.onecms.image.CropInfo","15x13":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":2220,"width":2563,"x":326,"y":0},"imageFormat":{"aspectRatio":{"height":13,"width":15},"name":"15x13"}},"40x21_type":"com.atex.onecms.image.CropInfo","40x21":{"_type":"com.atex.onecms.image.CropInfo","cropRectangle":{"height":1737,"width":3304,"x":0,"y":158},"imageFormat":{"aspectRatio":{"height":21,"width":40},"name":"40x21"}}}},"customAttributes":{}},"com.atex.standard.image.exif.MetadataTags":{"data":{"imageWidth":"3304","_type":"com.atex.standard.image.exif.MetadataTags","fileUri":"content://imageid485260/485260-jpg","description":"A girl holds a globe as she participates in a protest in Mumbai, India, Friday, Sept. 27, 2019. Protestors gathered in response to a day of worldwide demonstrations calling for action to guard against climate change. (AP Photo/Rafiq Maqbool)","title":"a43f7245-768b-43f5-902c-9ad78d054820","byline":"Rafiq Maqbool","imageHeight":"2220","tags":{"Exif Thumbnail_type":"java.util.LinkedHashMap","Exif Thumbnail":{"_type":"java.util.LinkedHashMap","Resolution Unit_type":"java.lang.Integer","Resolution Unit":2,"Thumbnail Length_type":"java.lang.Long","Thumbnail Length":9435,"Compression_type":"java.lang.Integer","Compression":6,"Thumbnail Offset_type":"java.lang.Long","Thumbnail Offset":1640,"X Resolution_type":"java.lang.String","X Resolution":"72 dots per inch","Y Resolution_type":"java.lang.String","Y Resolution":"72 dots per inch"},"IPTC_type":"java.util.LinkedHashMap","IPTC":{"_type":"java.util.LinkedHashMap","Category_type":"java.lang.String","Category":"I","Country/Primary Location Code_type":"java.lang.String","Country/Primary Location Code":"IND","By-line_type":"java.lang.String","By-line":"Rafiq Maqbool","Caption/Abstract_type":"java.lang.String","Caption/Abstract":"A girl holds a globe as she participates in a protest in Mumbai, India, Friday, Sept. 27, 2019. Protestors gathered in response to a day of worldwide demonstrations calling for action to guard against climate change. (AP Photo/Rafiq Maqbool)","City_type":"java.lang.String","City":"Mumbai","Object Name_type":"java.lang.String","Object Name":"a43f7245-768b-43f5-902c-9ad78d054820","Original Transmission Reference_type":"java.lang.String","Original Transmission Reference":"RMX116","Source_type":"java.lang.String","Source":"AP","Credit_type":"java.lang.String","Credit":"AP","Copyright Notice_type":"java.lang.String","Copyright Notice":"Copyright 2019 The Associated Press. All rights reserved.","Country/Primary Location Name_type":"java.lang.String","Country/Primary Location Name":"IND","Headline_type":"java.lang.String","Headline":"India Climate Protest","Time Created_type":"java.lang.String","Time Created":"11:02:12+0000","Urgency_type":"java.lang.Integer","Urgency":53,"Application Record Version_type":"java.lang.Integer","Application Record Version":4,"Date Created_type":"java.lang.String","Date Created":"2019:09:27"},"Exif SubIFD_type":"java.util.LinkedHashMap","Exif SubIFD":{"_type":"java.util.LinkedHashMap","Lens Model_type":"java.lang.String","Lens Model":"EF24-105mm f/4L IS USM","Exif Version_type":"java.lang.String","Exif Version":"2.30","Components Configuration_type":"java.lang.String","Components Configuration":"YCbCr","FlashPix Version_type":"java.lang.String","FlashPix Version":"1.00","Focal Plane X Resolution_type":"java.lang.String","Focal Plane X Resolution":"487/1920000 inches","Sub-Sec Time Original_type":"java.lang.String","Sub-Sec Time Original":"94","Focal Length_type":"java.lang.String","Focal Length":"105 mm","Subject Distance_type":"java.lang.String","Subject Distance":"2.72 metres","Sub-Sec Time Digitized_type":"java.lang.String","Sub-Sec Time Digitized":"94","Date/Time Original_type":"java.lang.String","Date/Time Original":"2019:09:27 16:32:12","Shutter Speed Value_type":"java.lang.String","Shutter Speed Value":"1/663 sec","Focal Plane Resolution Unit_type":"java.lang.Integer","Focal Plane Resolution Unit":2,"Color Space_type":"java.lang.Integer","Color Space":1,"F-Number_type":"java.lang.String","F-Number":"f/4.0","Date/Time Digitized_type":"java.lang.String","Date/Time Digitized":"2019:09:27 16:32:12","Sensitivity Type_type":"java.lang.Integer","Sensitivity Type":2,"Exposure Program_type":"java.lang.Integer","Exposure Program":3,"Flash_type":"java.lang.Integer","Flash":16,"Aperture Value_type":"java.lang.String","Aperture Value":"f/4.0","User Comment_type":"java.lang.String","User Comment":"","Exposure Time_type":"java.lang.String","Exposure Time":"1/640 sec","ISO Speed Ratings_type":"java.lang.Integer","ISO Speed Ratings":400,"Recommended Exposure Index_type":"java.lang.Long","Recommended Exposure Index":400,"Exif Image Width_type":"java.lang.Long","Exif Image Width":3304,"Metering Mode_type":"java.lang.Integer","Metering Mode":5,"Body Serial Number_type":"java.lang.String","Body Serial Number":"053024002609","Exposure Bias Value_type":"java.lang.String","Exposure Bias Value":"-2/3 EV","Focal Plane Y Resolution_type":"java.lang.String","Focal Plane Y Resolution":"486/1920000 inches","Camera Owner Name_type":"java.lang.String","Camera Owner Name":"","Lens Specification_type":"java.lang.String","Lens Specification":"24-105mm","Lens Serial Number_type":"java.lang.String","Lens Serial Number":"000050e8b7","Max Aperture Value_type":"java.lang.String","Max Aperture Value":"f/4.0","Exposure Mode_type":"java.lang.Integer","Exposure Mode":0,"Scene Capture Type_type":"java.lang.Integer","Scene Capture Type":0,"Custom Rendered_type":"java.lang.Integer","Custom Rendered":0,"Exif Image Height_type":"java.lang.Long","Exif Image Height":2220,"Sub-Sec Time_type":"java.lang.String","Sub-Sec Time":"94","White Balance Mode_type":"java.lang.Integer","White Balance Mode":0},"Exif IFD0_type":"java.util.LinkedHashMap","Exif IFD0":{"_type":"java.util.LinkedHashMap","Artist_type":"java.lang.String","Artist":"Rafiq Maqbool","Image Description_type":"java.lang.String","Image Description":"A girl holds a globe as she participates in a protest in Mumbai, India, Friday, Sept. 27, 2019. Protestors gathered in response to a day of worldwide demonstrations calling for action to guard against climate change. (AP Photo/Rafiq Maqbool)","Date/Time_type":"java.lang.String","Date/Time":"2019:09:27 19:02:24","Make_type":"java.lang.String","Make":"Canon","Samples Per Pixel_type":"java.lang.Integer","Samples Per Pixel":3,"YCbCr Positioning_type":"java.lang.Integer","YCbCr Positioning":2,"Image Height_type":"java.lang.Integer","Image Height":3840,"Orientation_type":"java.lang.Integer","Orientation":1,"X Resolution_type":"java.lang.String","X Resolution":"300 dots per inch","Image Width_type":"java.lang.Integer","Image Width":5760,"Photometric Interpretation_type":"java.lang.Integer","Photometric Interpretation":2,"Resolution Unit_type":"java.lang.Integer","Resolution Unit":2,"Model_type":"java.lang.String","Model":"Canon EOS 5D Mark III","Software_type":"java.lang.String","Software":"Adobe Photoshop CS5.1 Macintosh","Bits Per Sample_type":"java.lang.String","Bits Per Sample":"8 8 8 bits/component/pixel","Y Resolution_type":"java.lang.String","Y Resolution":"300 dots per inch"},"JPEG_type":"java.util.LinkedHashMap","JPEG":{"_type":"java.util.LinkedHashMap","Component 3_type":"java.lang.String","Component 3":"Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert","Compression Type_type":"java.lang.Integer","Compression Type":0,"Data Precision_type":"java.lang.Integer","Data Precision":8,"Number of Components_type":"java.lang.Integer","Number of Components":3,"Component 2_type":"java.lang.String","Component 2":"Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert","Component 1_type":"java.lang.String","Component 1":"Y component: Quantization table 0, Sampling factors 1 horiz/1 vert","Image Height_type":"java.lang.Integer","Image Height":2220,"Image Width_type":"java.lang.Integer","Image Width":3304},"XMP_type":"java.util.LinkedHashMap","XMP":{"_type":"java.util.LinkedHashMap","Create Date_type":"java.lang.String","Create Date":"2019-09-27T11:02:12","Metadata Date_type":"java.lang.String","Metadata Date":"2019-09-27T13:45:18+00:00","Modify Date_type":"java.lang.String","Modify Date":"2019-09-27T13:45:18+00:00","XMP Value Count_type":"java.lang.Integer","XMP Value Count":33,"Rating_type":"java.lang.Double","Rating":3},"JFIF_type":"java.util.LinkedHashMap","JFIF":{"_type":"java.util.LinkedHashMap","Resolution Units_type":"java.lang.Integer","Resolution Units":1,"Version_type":"java.lang.Integer","Version":257,"Thumbnail Height Pixels_type":"java.lang.Integer","Thumbnail Height Pixels":0,"Thumbnail Width Pixels_type":"java.lang.Integer","Thumbnail Width Pixels":0,"X Resolution_type":"java.lang.Integer","X Resolution":300,"Y Resolution_type":"java.lang.Integer","Y Resolution":300},"Photoshop_type":"java.util.LinkedHashMap","Photoshop":{"_type":"java.util.LinkedHashMap"},"Interoperability_type":"java.util.LinkedHashMap","Interoperability":{"_type":"java.util.LinkedHashMap","Interoperability Version_type":"java.lang.String","Interoperability Version":"1.00","Interoperability Index_type":"java.lang.String","Interoperability Index":"Recommended Exif Interoperability Rules (ExifR98)"}}},"customAttributes":{}},"atex.OneCMS":{"data":{"_type":"atex.OneCMS","createdWithTemplate":"act.template.Image.edit"},"customAttributes":{}}}}}
+{
+  "eventId": 16160543,
+  "contentId": "1.1593161",
+  "commitId": 1569819329,
+  "_data": {
+    "id": "policy:1.1593161",
+    "version": "policy:1.1593161:1569819329",
+    "meta": {
+      "modificationTime": "1569819345000",
+      "originalCreationTime": "1569818916000"
+    },
+    "aspects": {
+      "contentData": {
+        "data": {
+          "altText": "This is the alt text",
+          "_type": "com.atex.standard.image.ImageContentDataBean",
+          "description": "This is the description",
+          "photographer": "Mr Author",
+          "title": "This is the title or subtitle",
+          "url": "/image/policy:1.1593161.1569819329/485259.jpg?f\u003ddefault\u0026h\u003d2025\u0026w\u003d3153"
+        },
+        "customAttributes": {}
+      },
+      "p.InsertionInfo": {
+        "data": {
+          "_type": "p.InsertionInfo",
+          "securityParentId": "contentid/policy:2.599",
+          "associatedSites": "contentid/policy:2.599"
+        },
+        "customAttributes": {}
+      },
+      "atex.Metadata": {
+        "data": {
+          "metadata": {
+            "dimensions": []
+          },
+          "_type": "atex.Metadata",
+          "taxonomyIds": "vl.no"
+        },
+        "customAttributes": {}
+      },
+      "p.Inbox": {
+        "data": {
+          "_type": "p.Inbox",
+          "showInInbox": "false"
+        },
+        "customAttributes": {}
+      },
+      "atex.Files": {
+        "data": {
+          "_type": "atex.Files",
+          "files": {
+            "485259.jpg_type": "com.atex.onecms.content.ContentFileInfo",
+            "485259.jpg": {
+              "_type": "com.atex.onecms.content.ContentFileInfo",
+              "fileUri": "content://imageid485259/485259-jpg-1",
+              "filePath": "485259.jpg"
+            }
+          }
+        },
+        "customAttributes": {}
+      },
+      "atex.Image": {
+        "data": {
+          "filePath": "485259.jpg",
+          "_type": "atex.Image",
+          "width": "3153",
+          "height": "2025"
+        },
+        "customAttributes": {}
+      },
+      "atex.Aliases": {
+        "data": {
+          "aliases": {
+            "externalId_type": "java.lang.String",
+            "externalId": "imageid485259"
+          },
+          "_type": "atex.Aliases"
+        },
+        "customAttributes": {}
+      },
+      "p.ContentState": {
+        "data": {
+          "deleted": "false",
+          "_type": "p.ContentState",
+          "online": "true",
+          "moderationState": "pubp"
+        },
+        "customAttributes": {}
+      },
+      "standard.Image.MetadataTags": {
+        "data": {
+          "imageWidth": "3153",
+          "_type": "com.atex.standard.image.exif.MetadataTags",
+          "fileUri": "content://imageid485259/485259-jpg-1",
+          "description": "Migrants and refugees stand next to burning house containers at the Moria refugee camp, on the northeastern Aegean island of Lesbos, Greece, Sunday, Sept. 29, 2019.  Migrants protesting at an overcrowded camp on the Greek island of Lesbos set fires and clashed with police Sunday, authorities said. Police and local authorities said there were unconfirmed reports of two fatalities at the Moria camp. (InTime News via AP)",
+          "title": "a8feecd3-6737-48c9-80f3-f12027198d9e",
+          "byline": "Uncredited",
+          "imageHeight": "2025",
+          "tags": {
+            "Exif Thumbnail_type": "java.util.LinkedHashMap",
+            "Exif Thumbnail": {
+              "_type": "java.util.LinkedHashMap",
+              "Resolution Unit_type": "java.lang.Integer",
+              "Resolution Unit": 2,
+              "Thumbnail Length_type": "java.lang.Long",
+              "Thumbnail Length": 0,
+              "Compression_type": "java.lang.Integer",
+              "Compression": 6,
+              "Thumbnail Offset_type": "java.lang.Long",
+              "Thumbnail Offset": 858,
+              "X Resolution_type": "java.lang.String",
+              "X Resolution": "72 dots per inch",
+              "Y Resolution_type": "java.lang.String",
+              "Y Resolution": "72 dots per inch"
+            },
+            "IPTC_type": "java.util.LinkedHashMap",
+            "IPTC": {
+              "_type": "java.util.LinkedHashMap",
+              "Category_type": "java.lang.String",
+              "Category": "I",
+              "Country/Primary Location Code_type": "java.lang.String",
+              "Country/Primary Location Code": "GRC",
+              "By-line_type": "java.lang.String",
+              "By-line": "Uncredited",
+              "Caption/Abstract_type": "java.lang.String",
+              "Caption/Abstract": "Migrants and refugees stand next to burning house containers at the Moria refugee camp, on the northeastern Aegean island of Lesbos, Greece, Sunday, Sept. 29, 2019.  Migrants protesting at an overcrowded camp on the Greek island of Lesbos set fires and clashed with police Sunday, authorities said. Police and local authorities said there were unconfirmed reports of two fatalities at the Moria camp. (InTime News via AP)",
+              "City_type": "java.lang.String",
+              "City": "Moria",
+              "Object Name_type": "java.lang.String",
+              "Object Name": "a8feecd3-6737-48c9-80f3-f12027198d9e",
+              "Original Transmission Reference_type": "java.lang.String",
+              "Original Transmission Reference": "XTS802",
+              "Source_type": "java.lang.String",
+              "Source": "InTime News",
+              "Caption Writer/Editor_type": "java.lang.String",
+              "Caption Writer/Editor": "TS",
+              "Credit_type": "java.lang.String",
+              "Credit": "AP",
+              "Country/Primary Location Name_type": "java.lang.String",
+              "Country/Primary Location Name": "GRC",
+              "Special Instructions_type": "java.lang.String",
+              "Special Instructions": "GREECE OUT",
+              "Headline_type": "java.lang.String",
+              "Headline": "Greece Migrants",
+              "Time Created_type": "java.lang.String",
+              "Time Created": "17:27:26+0000",
+              "Urgency_type": "java.lang.Integer",
+              "Urgency": 53,
+              "Application Record Version_type": "java.lang.Integer",
+              "Application Record Version": 4,
+              "Date Created_type": "java.lang.String",
+              "Date Created": "2019:09:29"
+            },
+            "Exif SubIFD_type": "java.util.LinkedHashMap",
+            "Exif SubIFD": {
+              "_type": "java.util.LinkedHashMap",
+              "Color Space_type": "java.lang.Integer",
+              "Color Space": 65535,
+              "Exif Version_type": "java.lang.String",
+              "Exif Version": "2.30",
+              "Exif Image Height_type": "java.lang.Long",
+              "Exif Image Height": 2025,
+              "Exif Image Width_type": "java.lang.Long",
+              "Exif Image Width": 3153
+            },
+            "Exif IFD0_type": "java.util.LinkedHashMap",
+            "Exif IFD0": {
+              "_type": "java.util.LinkedHashMap",
+              "Artist_type": "java.lang.String",
+              "Artist": "Uncredited                 ",
+              "Image Description_type": "java.lang.String",
+              "Image Description": "Migrants and refugees stand next to burning house containers at the Moria refugee camp, on the northeastern Aegean island of Lesbos, Greece, Sunday, Sept. 29, 2019.  Migrants protesting at an overcrowded camp on the Greek island of Lesbos set fires and clashed with police Sunday, authorities said. Police and local authorities said there were unconfirmed reports of two fatalities at the Moria camp. (InTime News via AP)",
+              "Date/Time_type": "java.lang.String",
+              "Date/Time": "2019:09:29 20:27:26",
+              "Samples Per Pixel_type": "java.lang.Integer",
+              "Samples Per Pixel": 3,
+              "Image Height_type": "java.lang.Integer",
+              "Image Height": 2025,
+              "Orientation_type": "java.lang.Integer",
+              "Orientation": 1,
+              "X Resolution_type": "java.lang.String",
+              "X Resolution": "100 dots per inch",
+              "Image Width_type": "java.lang.Integer",
+              "Image Width": 3600,
+              "Photometric Interpretation_type": "java.lang.Integer",
+              "Photometric Interpretation": 2,
+              "Resolution Unit_type": "java.lang.Integer",
+              "Resolution Unit": 2,
+              "Software_type": "java.lang.String",
+              "Software": "Adobe Photoshop CC 2019 (Macintosh)",
+              "Bits Per Sample_type": "java.lang.String",
+              "Bits Per Sample": "8 8 8 bits/component/pixel",
+              "Y Resolution_type": "java.lang.String",
+              "Y Resolution": "100 dots per inch"
+            },
+            "JPEG_type": "java.util.LinkedHashMap",
+            "JPEG": {
+              "_type": "java.util.LinkedHashMap",
+              "Component 3_type": "java.lang.String",
+              "Component 3": "Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert",
+              "Compression Type_type": "java.lang.Integer",
+              "Compression Type": 0,
+              "Data Precision_type": "java.lang.Integer",
+              "Data Precision": 8,
+              "Number of Components_type": "java.lang.Integer",
+              "Number of Components": 3,
+              "Component 2_type": "java.lang.String",
+              "Component 2": "Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert",
+              "Component 1_type": "java.lang.String",
+              "Component 1": "Y component: Quantization table 0, Sampling factors 2 horiz/2 vert",
+              "Image Height_type": "java.lang.Integer",
+              "Image Height": 2025,
+              "Image Width_type": "java.lang.Integer",
+              "Image Width": 3153
+            },
+            "XMP_type": "java.util.LinkedHashMap",
+            "XMP": {
+              "_type": "java.util.LinkedHashMap",
+              "Create Date_type": "java.lang.String",
+              "Create Date": "2019-09-29T17:27:26",
+              "Metadata Date_type": "java.lang.String",
+              "Metadata Date": "2019-09-29T17:47:45+00:00",
+              "Modify Date_type": "java.lang.String",
+              "Modify Date": "2019-09-29T17:47:45+00:00",
+              "XMP Value Count_type": "java.lang.Integer",
+              "XMP Value Count": 35,
+              "Rating_type": "java.lang.Double",
+              "Rating": 3.0
+            },
+            "JFIF_type": "java.util.LinkedHashMap",
+            "JFIF": {
+              "_type": "java.util.LinkedHashMap",
+              "Resolution Units_type": "java.lang.Integer",
+              "Resolution Units": 1,
+              "Version_type": "java.lang.Integer",
+              "Version": 257,
+              "Thumbnail Height Pixels_type": "java.lang.Integer",
+              "Thumbnail Height Pixels": 0,
+              "Thumbnail Width Pixels_type": "java.lang.Integer",
+              "Thumbnail Width Pixels": 0,
+              "X Resolution_type": "java.lang.Integer",
+              "X Resolution": 100,
+              "Y Resolution_type": "java.lang.Integer",
+              "Y Resolution": 100
+            },
+            "Photoshop_type": "java.util.LinkedHashMap",
+            "Photoshop": {
+              "_type": "java.util.LinkedHashMap"
+            }
+          }
+        },
+        "customAttributes": {}
+      },
+      "atex.ImageEditInfo": {
+        "data": {
+          "flipHorizontal": "false",
+          "rotation": "0",
+          "pixelations": [],
+          "_type": "atex.ImageEditInfo",
+          "flipVertical": "false",
+          "crops": {
+            "16x9_type": "com.atex.onecms.image.CropInfo",
+            "16x9": {
+              "_type": "com.atex.onecms.image.CropInfo",
+              "cropRectangle": {
+                "height": 1773,
+                "width": 3153,
+                "x": 0,
+                "y": 252
+              },
+              "imageFormat": {
+                "aspectRatio": {
+                  "height": 9,
+                  "width": 16
+                },
+                "name": "16x9"
+              }
+            },
+            "8x3_type": "com.atex.onecms.image.CropInfo",
+            "8x3": {
+              "_type": "com.atex.onecms.image.CropInfo",
+              "cropRectangle": {
+                "height": 1184,
+                "width": 3153,
+                "x": 0,
+                "y": 482
+              },
+              "imageFormat": {
+                "aspectRatio": {
+                  "height": 3,
+                  "width": 8
+                },
+                "name": "8x3"
+              }
+            },
+            "40x21_type": "com.atex.onecms.image.CropInfo",
+            "40x21": {
+              "_type": "com.atex.onecms.image.CropInfo",
+              "cropRectangle": {
+                "height": 1656,
+                "width": 3153,
+                "x": 0,
+                "y": 257
+              },
+              "imageFormat": {
+                "aspectRatio": {
+                  "height": 21,
+                  "width": 40
+                },
+                "name": "40x21"
+              }
+            }
+          }
+        },
+        "customAttributes": {}
+      },
+      "com.atex.standard.image.exif.MetadataTags": {
+        "data": {
+          "imageWidth": "3153",
+          "_type": "com.atex.standard.image.exif.MetadataTags",
+          "fileUri": "content://imageid485259/485259-jpg-1",
+          "description": "Migrants and refugees stand next to burning house containers at the Moria refugee camp, on the northeastern Aegean island of Lesbos, Greece, Sunday, Sept. 29, 2019.  Migrants protesting at an overcrowded camp on the Greek island of Lesbos set fires and clashed with police Sunday, authorities said. Police and local authorities said there were unconfirmed reports of two fatalities at the Moria camp. (InTime News via AP)",
+          "title": "a8feecd3-6737-48c9-80f3-f12027198d9e",
+          "byline": "Uncredited",
+          "imageHeight": "2025",
+          "tags": {
+            "Exif Thumbnail_type": "java.util.LinkedHashMap",
+            "Exif Thumbnail": {
+              "_type": "java.util.LinkedHashMap",
+              "Resolution Unit_type": "java.lang.Integer",
+              "Resolution Unit": 2,
+              "Thumbnail Length_type": "java.lang.Long",
+              "Thumbnail Length": 0,
+              "Compression_type": "java.lang.Integer",
+              "Compression": 6,
+              "Thumbnail Offset_type": "java.lang.Long",
+              "Thumbnail Offset": 858,
+              "X Resolution_type": "java.lang.String",
+              "X Resolution": "72 dots per inch",
+              "Y Resolution_type": "java.lang.String",
+              "Y Resolution": "72 dots per inch"
+            },
+            "IPTC_type": "java.util.LinkedHashMap",
+            "IPTC": {
+              "_type": "java.util.LinkedHashMap",
+              "Category_type": "java.lang.String",
+              "Category": "I",
+              "Country/Primary Location Code_type": "java.lang.String",
+              "Country/Primary Location Code": "GRC",
+              "By-line_type": "java.lang.String",
+              "By-line": "Uncredited",
+              "Caption/Abstract_type": "java.lang.String",
+              "Caption/Abstract": "Migrants and refugees stand next to burning house containers at the Moria refugee camp, on the northeastern Aegean island of Lesbos, Greece, Sunday, Sept. 29, 2019.  Migrants protesting at an overcrowded camp on the Greek island of Lesbos set fires and clashed with police Sunday, authorities said. Police and local authorities said there were unconfirmed reports of two fatalities at the Moria camp. (InTime News via AP)",
+              "City_type": "java.lang.String",
+              "City": "Moria",
+              "Object Name_type": "java.lang.String",
+              "Object Name": "a8feecd3-6737-48c9-80f3-f12027198d9e",
+              "Original Transmission Reference_type": "java.lang.String",
+              "Original Transmission Reference": "XTS802",
+              "Source_type": "java.lang.String",
+              "Source": "InTime News",
+              "Caption Writer/Editor_type": "java.lang.String",
+              "Caption Writer/Editor": "TS",
+              "Credit_type": "java.lang.String",
+              "Credit": "AP",
+              "Country/Primary Location Name_type": "java.lang.String",
+              "Country/Primary Location Name": "GRC",
+              "Special Instructions_type": "java.lang.String",
+              "Special Instructions": "GREECE OUT",
+              "Headline_type": "java.lang.String",
+              "Headline": "Greece Migrants",
+              "Time Created_type": "java.lang.String",
+              "Time Created": "17:27:26+0000",
+              "Urgency_type": "java.lang.Integer",
+              "Urgency": 53,
+              "Application Record Version_type": "java.lang.Integer",
+              "Application Record Version": 4,
+              "Date Created_type": "java.lang.String",
+              "Date Created": "2019:09:29"
+            },
+            "Exif SubIFD_type": "java.util.LinkedHashMap",
+            "Exif SubIFD": {
+              "_type": "java.util.LinkedHashMap",
+              "Color Space_type": "java.lang.Integer",
+              "Color Space": 65535,
+              "Exif Version_type": "java.lang.String",
+              "Exif Version": "2.30",
+              "Exif Image Height_type": "java.lang.Long",
+              "Exif Image Height": 2025,
+              "Exif Image Width_type": "java.lang.Long",
+              "Exif Image Width": 3153
+            },
+            "Exif IFD0_type": "java.util.LinkedHashMap",
+            "Exif IFD0": {
+              "_type": "java.util.LinkedHashMap",
+              "Artist_type": "java.lang.String",
+              "Artist": "Uncredited                 ",
+              "Image Description_type": "java.lang.String",
+              "Image Description": "Migrants and refugees stand next to burning house containers at the Moria refugee camp, on the northeastern Aegean island of Lesbos, Greece, Sunday, Sept. 29, 2019.  Migrants protesting at an overcrowded camp on the Greek island of Lesbos set fires and clashed with police Sunday, authorities said. Police and local authorities said there were unconfirmed reports of two fatalities at the Moria camp. (InTime News via AP)",
+              "Date/Time_type": "java.lang.String",
+              "Date/Time": "2019:09:29 20:27:26",
+              "Samples Per Pixel_type": "java.lang.Integer",
+              "Samples Per Pixel": 3,
+              "Image Height_type": "java.lang.Integer",
+              "Image Height": 2025,
+              "Orientation_type": "java.lang.Integer",
+              "Orientation": 1,
+              "X Resolution_type": "java.lang.String",
+              "X Resolution": "100 dots per inch",
+              "Image Width_type": "java.lang.Integer",
+              "Image Width": 3600,
+              "Photometric Interpretation_type": "java.lang.Integer",
+              "Photometric Interpretation": 2,
+              "Resolution Unit_type": "java.lang.Integer",
+              "Resolution Unit": 2,
+              "Software_type": "java.lang.String",
+              "Software": "Adobe Photoshop CC 2019 (Macintosh)",
+              "Bits Per Sample_type": "java.lang.String",
+              "Bits Per Sample": "8 8 8 bits/component/pixel",
+              "Y Resolution_type": "java.lang.String",
+              "Y Resolution": "100 dots per inch"
+            },
+            "JPEG_type": "java.util.LinkedHashMap",
+            "JPEG": {
+              "_type": "java.util.LinkedHashMap",
+              "Component 3_type": "java.lang.String",
+              "Component 3": "Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert",
+              "Compression Type_type": "java.lang.Integer",
+              "Compression Type": 0,
+              "Data Precision_type": "java.lang.Integer",
+              "Data Precision": 8,
+              "Number of Components_type": "java.lang.Integer",
+              "Number of Components": 3,
+              "Component 2_type": "java.lang.String",
+              "Component 2": "Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert",
+              "Component 1_type": "java.lang.String",
+              "Component 1": "Y component: Quantization table 0, Sampling factors 2 horiz/2 vert",
+              "Image Height_type": "java.lang.Integer",
+              "Image Height": 2025,
+              "Image Width_type": "java.lang.Integer",
+              "Image Width": 3153
+            },
+            "XMP_type": "java.util.LinkedHashMap",
+            "XMP": {
+              "_type": "java.util.LinkedHashMap",
+              "Create Date_type": "java.lang.String",
+              "Create Date": "2019-09-29T17:27:26",
+              "Metadata Date_type": "java.lang.String",
+              "Metadata Date": "2019-09-29T17:47:45+00:00",
+              "Modify Date_type": "java.lang.String",
+              "Modify Date": "2019-09-29T17:47:45+00:00",
+              "XMP Value Count_type": "java.lang.Integer",
+              "XMP Value Count": 35,
+              "Rating_type": "java.lang.Double",
+              "Rating": 3.0
+            },
+            "JFIF_type": "java.util.LinkedHashMap",
+            "JFIF": {
+              "_type": "java.util.LinkedHashMap",
+              "Resolution Units_type": "java.lang.Integer",
+              "Resolution Units": 1,
+              "Version_type": "java.lang.Integer",
+              "Version": 257,
+              "Thumbnail Height Pixels_type": "java.lang.Integer",
+              "Thumbnail Height Pixels": 0,
+              "Thumbnail Width Pixels_type": "java.lang.Integer",
+              "Thumbnail Width Pixels": 0,
+              "X Resolution_type": "java.lang.Integer",
+              "X Resolution": 100,
+              "Y Resolution_type": "java.lang.Integer",
+              "Y Resolution": 100
+            },
+            "Photoshop_type": "java.util.LinkedHashMap",
+            "Photoshop": {
+              "_type": "java.util.LinkedHashMap"
+            }
+          }
+        },
+        "customAttributes": {}
+      },
+      "atex.OneCMS": {
+        "data": {
+          "_type": "atex.OneCMS",
+          "createdWithTemplate": "act.template.Image.edit"
+        },
+        "customAttributes": {}
+      }
+    }
+  }
+}

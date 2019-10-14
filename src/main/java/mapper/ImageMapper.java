@@ -15,17 +15,17 @@ public interface ImageMapper {
 
     @Mappings({
             @Mapping(target="_id", ignore = true),
-            @Mapping(target="version", expression = "java(new String(\"0.10.4\"))"),
+            @Mapping(target="version", expression = "java(new String(\"0.10.3\"))"),
             @Mapping(target="type", source = "aspects",qualifiedBy = MapUtil.Type.class),
             @Mapping(target="language", source = "aspects",qualifiedBy = MapUtil.Language.class),
             @Mapping(target="createdDate",source = "meta",qualifiedBy = MapUtil.CreationTime.class),
             @Mapping(target="lastUpdatedDate",source = "meta",qualifiedBy = MapUtil.ModificationTime.class),
-            @Mapping(target="headlines.basic",source = "aspects",qualifiedBy = MapUtil.Headline.class),
+            @Mapping(target="subtitle",source = "aspects",qualifiedBy = MapUtil.Headline.class),
             @Mapping(target="caption",source = "aspects",qualifiedBy = MapUtil.Description.class),
             @Mapping(target="altText",source = "aspects",qualifiedBy = MapUtil.AltText.class),
-            @Mapping(target="status",source = "aspects",qualifiedBy = MapUtil.Status.class),
             @Mapping(target="width",source = "aspects",qualifiedBy = MapUtil.Width.class),
-            @Mapping(target="height",source = "aspects",qualifiedBy = MapUtil.Height.class)
+            @Mapping(target="height",source = "aspects",qualifiedBy = MapUtil.Height.class),
+            @Mapping(target="credits.by",source = "aspects",qualifiedBy = MapUtil.Photographer.class)
     })
     ArcImage toArcImage(DocData polopolyModel);
 }

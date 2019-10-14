@@ -3,6 +3,8 @@ package utility;
 import enums.ArcContentType;
 import enums.ArcLanguageSpec;
 import enums.ArcStatus;
+import enums.PolopolyContentType;
+import model.ArcCreditsBy;
 import model.Aspect;
 import model.Meta;
 import org.mapstruct.Qualifier;
@@ -15,6 +17,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
+import java.util.Objects;
 
 public class MapUtil {
 
@@ -28,22 +31,23 @@ public class MapUtil {
 
     @Type
     public String type(Map<String, Aspect> aspectMap) {
-        return ArcContentType.IMAGE.getDisplayName();
-    }
+        Object typeObj = aspectMap.get("contentData").getData().get("_type");
+        if(Objects.isNull(typeObj))
+            return null;
 
-    @Qualifier
-    @Target(ElementType.METHOD)
-    @Retention(RetentionPolicy.SOURCE)
-    public @interface Status {
-    }
+        String polopolyType = typeObj.toString().substring(typeObj.toString().lastIndexOf(".")+1);
+        PolopolyContentType enumType = PolopolyContentType.valueOf(polopolyType);
 
-    @Status
-    public String status(Map<String, Aspect> aspectMap){
-        String status = aspectMap.get("contentData").getData().get("status").toString();
-        for(ArcStatus e : ArcStatus.values()){
-            if(status.equals(e.getDisplayName()))
-                return e.getDisplayName();
+        switch(enumType){
+
+            case ImageContentDataBean:
+            case ImageResourceBean:
+                return ArcContentType.IMAGE.getDisplayName();
+
+            case ArticleBean:
+                return ArcContentType.STORY.getDisplayName();
         }
+
         return null;
     }
 
@@ -143,6 +147,27 @@ public class MapUtil {
     public String altText(Map<String, Aspect> aspectMap){
         return aspectMap.get("contentData").getData().get("altText").toString();
     }
+
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Photographer {
+    }
+
+    @Photographer
+    public ArcCreditsBy[] photographer(Map<String, Aspect> aspectMap){
+        String photoGrapherName = aspectMap.get("contentData").getData().get("photographer").toString();
+        ArcCreditsBy[] byList = new ArcCreditsBy[1];
+        ArcCreditsBy by = new ArcCreditsBy();
+        by.setByline(photoGrapherName);
+        by.setType(ArcContentType.AUTHOR.getDisplayName());
+        by.setVersion("0.10.3");
+        by.setName("");
+        byList[0] = by;
+
+        return byList;
+    }
+
 
     private String generateDateFromTimeString(String timeString){
         long timeInMills = Long.parseLong(timeString);
