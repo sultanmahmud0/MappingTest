@@ -32,9 +32,6 @@ public class TestPolopolyToArcTransform {
         DocData polopolyModel = sourceDoc.get_data();
 
         ArcImage arcImage = ImageMapper.MAPPER.toArcImage(polopolyModel);
-        Map<String,Object> additionalProperties = new HashMap<>();
-        additionalProperties.put("originalUrl","https://images.pexels.com/photos/125457/pexels-photo-125457.jpeg");
-        arcImage.setAdditionalProperties(additionalProperties);
 
         System.out.println("Transformed Arc Image ANS: " + new Gson().toJson(arcImage));
     }

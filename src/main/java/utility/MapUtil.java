@@ -2,7 +2,6 @@ package utility;
 
 import enums.ArcContentType;
 import enums.ArcLanguageSpec;
-import enums.ArcStatus;
 import enums.PolopolyContentType;
 import model.ArcCreditsBy;
 import model.Aspect;
@@ -16,6 +15,7 @@ import java.lang.annotation.Target;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
@@ -168,6 +168,23 @@ public class MapUtil {
         return byList;
     }
 
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface ImageSourcePublicUrl {
+    }
+
+    @ImageSourcePublicUrl
+    public Map<String,Object> imageSourcePublicUrl(Map<String, Aspect> aspectMap){
+        Object object = aspectMap.get("contentData").getData().get("originalUrl");
+        if(Objects.isNull(object)) return null;
+
+        String sourceUrl = object.toString();
+        Map<String,Object> propertiesMap = new HashMap<>();
+        propertiesMap.put("originalUrl",sourceUrl);
+
+        return propertiesMap;
+    }
 
     private String generateDateFromTimeString(String timeString){
         long timeInMills = Long.parseLong(timeString);

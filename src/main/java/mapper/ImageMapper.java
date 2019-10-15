@@ -25,7 +25,8 @@ public interface ImageMapper {
             @Mapping(target="altText",source = "aspects",qualifiedBy = MapUtil.AltText.class),
             @Mapping(target="width",source = "aspects",qualifiedBy = MapUtil.Width.class),
             @Mapping(target="height",source = "aspects",qualifiedBy = MapUtil.Height.class),
-            @Mapping(target="credits.by",source = "aspects",qualifiedBy = MapUtil.Photographer.class)
+            @Mapping(target="credits.by",source = "aspects",qualifiedBy = MapUtil.Photographer.class),
+            @Mapping(target="additionalProperties",source = "aspects",qualifiedBy = MapUtil.ImageSourcePublicUrl.class)
     })
     ArcImage toArcImage(DocData polopolyModel);
 }
