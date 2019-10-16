@@ -10,7 +10,7 @@ public class Doc {
 	private int eventId;
 	private String contentId;
 	private long commitId;
-	private DocData _data = new DocData();
+	private DocData _data;
 
 	public Aspect getAspect(String aspect) {
 		if(_data != null) {

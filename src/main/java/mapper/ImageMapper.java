@@ -2,13 +2,17 @@ package mapper;
 
 import model.ArcImage;
 import model.DocData;
+import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.factory.Mappers;
 import utility.MapUtil;
 
-@Mapper(uses = MapUtil.class)
+@Mapper(componentModel = "spring",
+        uses = MapUtil.class,
+        injectionStrategy = InjectionStrategy.FIELD,
+        unmappedTargetPolicy = org.mapstruct.ReportingPolicy.IGNORE)
 public interface ImageMapper {
 
     ImageMapper MAPPER = Mappers.getMapper(ImageMapper.class);

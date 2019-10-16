@@ -7,6 +7,7 @@ import model.ArcCreditsBy;
 import model.Aspect;
 import model.Meta;
 import org.mapstruct.Qualifier;
+import org.springframework.stereotype.Component;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
