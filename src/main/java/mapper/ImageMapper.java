@@ -2,7 +2,6 @@ package mapper;
 
 import model.ArcImage;
 import model.DocData;
-import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -10,8 +9,7 @@ import org.mapstruct.factory.Mappers;
 import utility.MapUtil;
 
 @Mapper(componentModel = "spring",
-        uses = MapUtil.class,
-        injectionStrategy = InjectionStrategy.FIELD,
+        imports = MapUtil.class,
         unmappedTargetPolicy = org.mapstruct.ReportingPolicy.IGNORE)
 public interface ImageMapper {
 
@@ -20,17 +18,17 @@ public interface ImageMapper {
     @Mappings({
             @Mapping(target="_id", ignore = true),
             @Mapping(target="version", expression = "java(new String(\"0.10.3\"))"),
-            @Mapping(target="type", source = "aspects",qualifiedBy = MapUtil.Type.class),
-            @Mapping(target="language", source = "aspects",qualifiedBy = MapUtil.Language.class),
-            @Mapping(target="createdDate",source = "meta",qualifiedBy = MapUtil.CreationTime.class),
-            @Mapping(target="lastUpdatedDate",source = "meta",qualifiedBy = MapUtil.ModificationTime.class),
-            @Mapping(target="subtitle",source = "aspects",qualifiedBy = MapUtil.Headline.class),
-            @Mapping(target="caption",source = "aspects",qualifiedBy = MapUtil.Description.class),
-            @Mapping(target="altText",source = "aspects",qualifiedBy = MapUtil.AltText.class),
-            @Mapping(target="width",source = "aspects",qualifiedBy = MapUtil.Width.class),
-            @Mapping(target="height",source = "aspects",qualifiedBy = MapUtil.Height.class),
-            @Mapping(target="credits.by",source = "aspects",qualifiedBy = MapUtil.Photographer.class),
-            @Mapping(target="additionalProperties",source = "aspects",qualifiedBy = MapUtil.ImageSourcePublicUrl.class)
+            @Mapping(target="type", expression = "java(MapUtil.type(polopolyModel.getAspects()))"),
+            @Mapping(target="language", expression = "java(MapUtil.language(polopolyModel.getAspects()))"),
+            @Mapping(target="createdDate",expression = "java(MapUtil.creationTime(polopolyModel.getMeta()))"),
+            @Mapping(target="lastUpdatedDate",expression = "java(MapUtil.modificationTime(polopolyModel.getMeta()))"),
+            @Mapping(target="subtitle",expression = "java(MapUtil.headline(polopolyModel.getAspects()))"),
+            @Mapping(target="caption",expression = "java(MapUtil.description(polopolyModel.getAspects()))"),
+            @Mapping(target="altText",expression = "java(MapUtil.altText(polopolyModel.getAspects()))"),
+            @Mapping(target="width",expression = "java(MapUtil.width(polopolyModel.getAspects()))"),
+            @Mapping(target="height",expression = "java(MapUtil.height(polopolyModel.getAspects()))"),
+            @Mapping(target="credits.by",expression = "java(MapUtil.photographer(docData.getAspects()))"),
+            @Mapping(target="additionalProperties",expression = "java(MapUtil.imageSourcePublicUrl(polopolyModel.getAspects()))")
     })
     ArcImage toArcImage(DocData polopolyModel);
 }
