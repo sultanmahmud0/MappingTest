@@ -1,16 +1,14 @@
 import com.google.gson.Gson;
 import mapper.ImageMapper;
-import mapper.SimpleMapper;
-import model.*;
+import model.ArcImage;
+import model.Doc;
+import model.DocData;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.Stream;
 
 public class TestPolopolyToArcTransform {
@@ -34,22 +32,4 @@ public class TestPolopolyToArcTransform {
 
         System.out.println("Transformed Arc Image ANS: " + new Gson().toJson(arcImage));
     }
-
-    @Test
-    public void testSimpleMapping(){
-
-        Map<String,Object> map = new HashMap<>();
-        map.put("hiddenMessage","true");
-        map.put("hiddenPlace","Dhaka");
-
-        Source source = Source.builder()
-                .id(1234)
-                .date(new Date())
-                .sourceMap(map)
-                .build();
-
-        Target target = SimpleMapper.MAPPER.toTarget(source);
-        System.out.println("Target : " + new Gson().toJson(target));
-    }
-
 }

@@ -1,10 +1,12 @@
 package model;
 
-import lombok.Data;
+import lombok.Builder;
+import lombok.Value;
 
 import java.io.Serializable;
 
-@Data
+@Value
+@Builder
 public class ArcHeadlines implements Serializable {
     private String basic;
 }

@@ -1,12 +1,13 @@
 package model;
 
-import lombok.Data;
+import lombok.Builder;
+import lombok.Value;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.Map;
 
-@Data
+@Value
+@Builder
 public class ArcAdditionalProperties implements Serializable {
-    private Map<String, Object> data = new HashMap<>();
+    private Map<String, Object> data;
 }

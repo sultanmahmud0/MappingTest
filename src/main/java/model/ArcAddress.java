@@ -1,11 +1,13 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Data;
+import lombok.Builder;
+import lombok.Value;
 
 import java.io.Serializable;
 
-@Data
+@Value
+@Builder
 public class ArcAddress implements Serializable {
 
     @SerializedName("post_office_box")

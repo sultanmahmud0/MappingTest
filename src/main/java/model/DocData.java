@@ -1,12 +1,17 @@
 package model;
 
-import lombok.Data;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Value;
 
 import java.io.Serializable;
 import java.util.Map;
 
-@Data
-public class DocData implements Serializable {
+@Value
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public final class DocData implements Serializable {
 	
 	private String id;
 	private String version; 

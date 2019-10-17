@@ -1,11 +1,13 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Data;
+import lombok.Getter;
+import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 
-@Data
+@Getter
+@SuperBuilder
 public class ArcBaseContent implements Serializable {
 
     private String _id;
@@ -55,4 +57,5 @@ public class ArcBaseContent implements Serializable {
 //    private String alignment; TODO
 
     private String language; //The value should follow IETF BCP47
+
 }

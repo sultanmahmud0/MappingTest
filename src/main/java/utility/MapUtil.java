@@ -6,9 +6,7 @@ import enums.PolopolyContentType;
 import model.ArcCreditsBy;
 import model.Aspect;
 import model.Meta;
-import org.mapstruct.Named;
 import org.mapstruct.Qualifier;
-import org.springframework.stereotype.Component;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -21,11 +19,17 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public interface MapUtil {
+public class MapUtil {
 
-    String ARC_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.S'Z'";
+    final static String ARC_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.S'Z'";
 
-    static String type(Map<String, Aspect> aspectMap) {
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Type { }
+
+    @Type
+    public String type(Map<String, Aspect> aspectMap) {
         Object typeObj = aspectMap.get("contentData").getData().get("_type");
         if(Objects.isNull(typeObj))
             return null;
@@ -46,7 +50,13 @@ public interface MapUtil {
         return null;
     }
 
-    static String language(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Language { }
+
+    @Language
+    public String language(Map<String, Aspect> aspectMap){
         String siteTaxonomy = aspectMap.get("atex.Metadata").getData().get("taxonomyIds").toString();
         String siteExt = siteTaxonomy.substring(siteTaxonomy.lastIndexOf(".")+1);
 
@@ -59,48 +69,103 @@ public interface MapUtil {
         return null;
     }
 
-    static String creationTime(Meta meta){
+
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface CreationTime { }
+
+    @CreationTime
+    public String creationTime(Meta meta){
         return generateDateFromTimeString(meta.getOriginalCreationTime());
     }
 
-    static String modificationTime(Meta meta){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface ModificationTime { }
+
+    @ModificationTime
+    public String modificationTime(Meta meta){
         return generateDateFromTimeString(meta.getModificationTime());
     }
 
-    static String headline(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Headline { }
+
+    @Headline
+    public String headline(Map<String, Aspect> aspectMap){
         return aspectMap.get("contentData").getData().get("title").toString();
     }
 
-    static String description(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Description { }
+
+    @Description
+    public String description(Map<String, Aspect> aspectMap){
         return aspectMap.get("contentData").getData().get("description").toString();
     }
 
-    static int width(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Width { }
+
+    @Width
+    public int width(Map<String, Aspect> aspectMap){
         return Integer.parseInt(aspectMap.get("atex.Image").getData().get("width").toString());
     }
 
-    static int height(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Height { }
+
+    @Height
+    public int height(Map<String, Aspect> aspectMap){
         return Integer.parseInt(aspectMap.get("atex.Image").getData().get("height").toString());
     }
 
-    static String altText(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface AltText { }
+
+    @AltText
+    public String altText(Map<String, Aspect> aspectMap){
         return aspectMap.get("contentData").getData().get("altText").toString();
     }
 
-    static ArcCreditsBy[] photographer(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Photographer { }
+
+    @Photographer
+    public ArcCreditsBy[] photographer(Map<String, Aspect> aspectMap){
         String photoGrapherName = aspectMap.get("contentData").getData().get("photographer").toString();
         ArcCreditsBy[] byList = new ArcCreditsBy[1];
-        ArcCreditsBy by = new ArcCreditsBy();
-        by.setByline(photoGrapherName);
-        by.setType(ArcContentType.AUTHOR.getDisplayName());
-        by.setVersion("0.10.3");
-        by.setName("");
+        ArcCreditsBy by = ArcCreditsBy.builder()
+                        .byline(photoGrapherName)
+                        .type(ArcContentType.AUTHOR.getDisplayName())
+                        .version("0.10.3")
+                        .name("")
+                        .build();
         byList[0] = by;
-
         return byList;
     }
 
-    static Map<String,Object> imageSourcePublicUrl(Map<String, Aspect> aspectMap){
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface ImageSourcePublicUrl { }
+
+    @ImageSourcePublicUrl
+    public Map<String,Object> imageSourcePublicUrl(Map<String, Aspect> aspectMap){
         Object object = aspectMap.get("contentData").getData().get("originalUrl");
         if(Objects.isNull(object)) return null;
 

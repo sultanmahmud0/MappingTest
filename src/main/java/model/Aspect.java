@@ -1,13 +1,17 @@
 package model;
 
-import lombok.Data;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Value;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.Map;
 
-@Data
-public class Aspect implements Serializable {
-	private Map<String, Object> data = new HashMap<>();
-	private Map<String, String> customAttributes = new HashMap<>();
+@Value
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public final class Aspect implements Serializable {
+	private Map<String, Object> data;
+	private Map<String, String> customAttributes;
 }

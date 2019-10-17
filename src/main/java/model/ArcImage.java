@@ -1,14 +1,14 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Builder;
-import lombok.Data;
 import lombok.Value;
+import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 import java.util.Map;
 
-@Data
+@Value
+@SuperBuilder
 public class ArcImage extends ArcBaseContent implements Serializable {
 
     @SerializedName("image_type")
