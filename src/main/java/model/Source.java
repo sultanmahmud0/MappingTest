@@ -1,14 +1,14 @@
 package model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 import java.util.Map;
 
-@Getter
-@Setter
-public class Source {
+@Value
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public final class Source {
 
     private long id;
     private Date date;

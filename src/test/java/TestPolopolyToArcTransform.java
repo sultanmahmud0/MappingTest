@@ -42,10 +42,11 @@ public class TestPolopolyToArcTransform {
         map.put("hiddenMessage","true");
         map.put("hiddenPlace","Dhaka");
 
-        Source source = new Source();
-        source.setId(1234);
-        source.setDate(new Date());
-        source.setSourceMap(map);
+        Source source = Source.builder()
+                .id(1234)
+                .date(new Date())
+                .sourceMap(map)
+                .build();
 
         Target target = SimpleMapper.MAPPER.toTarget(source);
         System.out.println("Target : " + new Gson().toJson(target));

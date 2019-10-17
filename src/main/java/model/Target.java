@@ -1,11 +1,11 @@
 package model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-public class Target {
+@Value
+@Builder
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public final class Target {
 
     private String uid;
     private String msg;
