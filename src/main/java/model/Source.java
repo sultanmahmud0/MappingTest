@@ -11,11 +11,14 @@ import java.util.Map;
 @Builder
 public class Source {
 
-    private String sourceId;
-    private int sourceNumber;
-    private boolean sourceStatus;
+    String sourceId;
+    int sourceNumber;
+    boolean sourceStatus;
 
-    private String childTitle;
-    private boolean childStatus;
-    private String childPlace;
+    String childTitle;
+    boolean childStatus;
+    String childPlace;
+
+    Map<String,Object> sourceMap;
+    Task task;
 }

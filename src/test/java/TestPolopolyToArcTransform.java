@@ -2,8 +2,12 @@ import com.google.gson.Gson;
 import mapper.ChildMapper;
 import model.Child;
 import model.Source;
+import model.Task;
 import org.junit.Test;
 import org.mapstruct.factory.Mappers;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class TestPolopolyToArcTransform {
 
@@ -30,6 +34,9 @@ public class TestPolopolyToArcTransform {
     @Test
     public void testInheritance(){
 
+        Map<String,Object> map = new HashMap();
+        map.put("childOrder","Order123");
+
         Source source = Source.builder()
                         .sourceId("456")
                         .sourceNumber(1234)
@@ -37,6 +44,8 @@ public class TestPolopolyToArcTransform {
                         .childPlace("Dhaka")
                         .childStatus(true)
                         .childTitle("Try")
+                        .sourceMap(map)
+                        .task(Task.builder().taskName("Task123").build())
                         .build();
 
 

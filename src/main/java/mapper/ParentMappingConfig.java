@@ -11,9 +11,9 @@ import org.mapstruct.Mappings;
 public interface ParentMappingConfig {
 
     @Mappings({
-            @Mapping(source = "source.sourceId", target= "parent.id"),
-            @Mapping(source = "source.sourceNumber", target= "parent.number"),
-            @Mapping(source = "source.sourceStatus", target= "parent.status")
+            @Mapping(source = "sourceId", target= "id"),
+            @Mapping(source = "sourceNumber", target= "number"),
+            @Mapping(source = "sourceStatus", target= "status")
     })
     void mapParent(Source source, @MappingTarget Parent parent);
 }
