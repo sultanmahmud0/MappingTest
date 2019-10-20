@@ -4,21 +4,24 @@ import lombok.*;
 
 @Data
 @ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class Child extends Parent {
 
-    private String subTitle;
+    private String secondaryTitle;
     private boolean secondaryStatus;
+    private String secondaryPlace;
 
     public Child(){
     }
 
-    public Child(String id, int number, boolean status,String subTitle,boolean secondaryStatus){
-        super(id,number,status);
-        this.subTitle = subTitle;
+    public Child(String id, int number, boolean status, String secondaryTitle, boolean secondaryStatus, String secondaryPlace) {
+        super(id, number, status);
+        this.secondaryTitle = secondaryTitle;
         this.secondaryStatus = secondaryStatus;
+        this.secondaryPlace = secondaryPlace;
     }
 
     protected Child(String id, int number, boolean status){
-        super(id,number,status);
+        super(id, number, status);
     }
 }

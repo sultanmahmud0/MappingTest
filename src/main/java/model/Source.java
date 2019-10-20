@@ -2,17 +2,20 @@ package model;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.Map;
 
 @Data
+@ToString(callSuper = true)
 @Builder
 public class Source {
 
-    String sourceId;
-    int sourceNumber;
-    boolean sourceStatus;
+    private String sourceId;
+    private int sourceNumber;
+    private boolean sourceStatus;
 
-    String subTitle;
-    Map<String,Object> sourceMap;
+    private String childTitle;
+    private boolean childStatus;
+    private String childPlace;
 }

@@ -1,6 +1,7 @@
 import com.google.gson.Gson;
 import mapper.ChildMapper;
-import model.*;
+import model.Child;
+import model.Source;
 import org.junit.Test;
 import org.mapstruct.factory.Mappers;
 
@@ -33,11 +34,14 @@ public class TestPolopolyToArcTransform {
                         .sourceId("456")
                         .sourceNumber(1234)
                         .sourceStatus(false)
-                        .subTitle("subTitle")
+                        .childPlace("Dhaka")
+                        .childStatus(true)
+                        .childTitle("Try")
                         .build();
+
 
         Child child = Mappers.getMapper(ChildMapper.class).mapChild(source);
 
-        System.out.println("Transformed Arc Image ANS: " + new Gson().toJson(child));
+        System.out.println("Transformed child object: " + new Gson().toJson(child));
     }
 }

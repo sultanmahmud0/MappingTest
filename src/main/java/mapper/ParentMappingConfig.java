@@ -7,13 +7,13 @@ import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.Mappings;
 
-@MapperConfig(unmappedTargetPolicy = org.mapstruct.ReportingPolicy.IGNORE)
+@MapperConfig
 public interface ParentMappingConfig {
 
     @Mappings({
-            @Mapping(source = "sourceId", target= "id"),
-            @Mapping(source = "sourceNumber", target= "number"),
-            @Mapping(source = "sourceStatus", target= "status")
+            @Mapping(source = "source.sourceId", target= "parent.id"),
+            @Mapping(source = "source.sourceNumber", target= "parent.number"),
+            @Mapping(source = "source.sourceStatus", target= "parent.status")
     })
-    void mapSourceToParent(Source source, @MappingTarget Parent parent);
+    void mapParent(Source source, @MappingTarget Parent parent);
 }
