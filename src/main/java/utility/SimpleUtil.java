@@ -2,6 +2,7 @@ package utility;
 
 import model.Order;
 import model.Task;
+import org.mapstruct.Named;
 import org.mapstruct.Qualifier;
 
 import java.lang.annotation.ElementType;
@@ -12,25 +13,25 @@ import java.util.Map;
 
 public class SimpleUtil {
 
-//    @Qualifier
-//    @Target(ElementType.METHOD)
-//    @Retention(RetentionPolicy.SOURCE)
-//    public @interface SecondaryStatus { }
-//
-//    @SecondaryStatus
-//    public String secondaryStatus(Map<String,Object> sourceMap){
-//        return sourceMap.get("childStatus").toString();
-//    }
-//
-//    @Qualifier
-//    @Target(ElementType.METHOD)
-//    @Retention(RetentionPolicy.SOURCE)
-//    public @interface SecondaryPlace { }
-//
-//    @SecondaryPlace
-//    public String secondaryPlace(Map<String,Object> sourceMap){
-//        return sourceMap.get("childPlace").toString();
-//    }
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.CLASS)
+    public @interface TemplateStatus { }
+
+    @TemplateStatus
+    public String template(Map<String,Object> sourceMap){
+        return sourceMap.get("childTemplate").toString();
+    }
+
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Type { }
+
+    @Type
+    public String type(Map<String,Object> sourceMap){
+        return sourceMap.get("childType").toString();
+    }
 
     @Qualifier
     @Target(ElementType.METHOD)

@@ -14,4 +14,6 @@ public class Child extends Parent {
     String secondaryPlace;
     Order secondaryOrder;
     String taskNumber;
+    String template;
+    String type;
 }

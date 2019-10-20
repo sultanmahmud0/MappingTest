@@ -36,6 +36,8 @@ public class TestPolopolyToArcTransform {
 
         Map<String,Object> map = new HashMap();
         map.put("childOrder","Order123");
+        map.put("childTemplate","Template123");
+        map.put("childType","DATA");
 
         Source source = Source.builder()
                         .sourceId("456")

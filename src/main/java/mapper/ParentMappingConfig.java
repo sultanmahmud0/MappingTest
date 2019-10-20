@@ -7,7 +7,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.Mappings;
 
-@MapperConfig
+@MapperConfig(unmappedTargetPolicy = org.mapstruct.ReportingPolicy.IGNORE)
 public interface ParentMappingConfig {
 
     @Mappings({

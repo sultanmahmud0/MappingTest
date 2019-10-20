@@ -2,14 +2,11 @@ package mapper;
 
 import model.Child;
 import model.Source;
-import org.mapstruct.InheritConfiguration;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
+import org.mapstruct.*;
 import utility.SimpleUtil;
 
 @Mapper(config = ChildMappingConfig.class,uses = SimpleUtil.class)
-public abstract class ChildMapper{
+public interface ChildMapper{
 
     @InheritConfiguration(name = "mapParent")
     @Mappings({
@@ -17,7 +14,11 @@ public abstract class ChildMapper{
             @Mapping(source = "childStatus", target= "secondaryStatus"),
             @Mapping(source = "childPlace", target= "secondaryPlace"),
             @Mapping(source = "sourceMap", target= "secondaryOrder",qualifiedBy = SimpleUtil.SecondaryOrder.class),
+            @Mapping(source = "sourceMap", target= "template",qualifiedBy = SimpleUtil.TemplateStatus.class),
+            @Mapping(source = "sourceMap", target= "type",qualifiedBy = SimpleUtil.Type.class),
             @Mapping(source = "task", target= "taskNumber",qualifiedBy = SimpleUtil.TaskStatus.class)
     })
-    public abstract Child mapChild(Source source);
+    Child mapChild(Source source);
 }
+
+
