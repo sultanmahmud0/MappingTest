@@ -1,34 +1,37 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Value;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 import java.util.Map;
 
-@Value
-@SuperBuilder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class ArcImage extends ArcBaseContent implements Serializable {
 
     @SerializedName("image_type")
-    private String imageType;
+    String imageType;
 
     @SerializedName("alt_text")
-    private String altText;
+    String altText;
 
     @SerializedName("focal_point")
-    private ArcImageFocalPoint focalPoint;
+    ArcImageFocalPoint focalPoint;
 
-    private String subtitle;
-    private String caption;
-    private String url;
+    String subtitle;
+    String caption;
+    String url;
 
-    private int width;
-    private int height;
+    int width;
+    int height;
 
-    private boolean licensable;
+    boolean licensable;
 
     @SerializedName("additional_properties")
-    private Map<String,Object> additionalProperties;
+    Map<String,Object> additionalProperties;
 }

@@ -1,61 +1,63 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Getter;
-import lombok.experimental.SuperBuilder;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-@Getter
-@SuperBuilder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ArcBaseContent implements Serializable {
 
-    private String _id;
-    private String type;
-    private String subtype;
-    private String version;
+    String _id;
+    String type;
+    String subtype;
+    String version;
 
     @SerializedName("created_date")
-    private String createdDate;
+    String createdDate;
 
     @SerializedName("publish_date")
-    private String publishDate;
+    String publishDate;
 
     @SerializedName("first_publish_date")
-    private String firstPublishDate;
+    String firstPublishDate;
 
     @SerializedName("last_updated_date")
-    private String lastUpdatedDate;
+    String lastUpdatedDate;
 
     @SerializedName("display_date")
-    private String displayDate;
+    String displayDate;
 
-    private String[] channels;
+    String[] channels;
 
     @SerializedName("canonical_url")
-    private String canonicalUrl;
+    String canonicalUrl;
 
     @SerializedName("short_url")
-    private String shortUrl;
+    String shortUrl;
 
-    private String location;
-    private ArcGeo geo;
+    String location;
+    ArcGeo geo;
 
-    private ArcAddress address;
-    private String copyright;
+    ArcAddress address;
+    String copyright;
 
-    private String status;
+    String status;
 
-    private ArcCredits credits;
+    ArcCredits credits;
 
-    private ArcHeadlines headlines;
+    ArcHeadlines headlines;
 
-//    private ArcTaxonomy taxonomy; TODO
+//    ArcTaxonomy taxonomy; TODO
 
-//    private ArcContentRestrictions content_restrictions; TODO
+//    ArcContentRestrictions content_restrictions; TODO
 
-//    private String alignment; TODO
+//    String alignment; TODO
 
-    private String language; //The value should follow IETF BCP47
+    String language; //The value should follow IETF BCP47
 
 }
