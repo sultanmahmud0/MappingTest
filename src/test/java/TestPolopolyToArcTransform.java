@@ -1,7 +1,8 @@
 import com.google.gson.Gson;
-import mapper.ChildMapper;
 import mapper.ImageMapper;
-import model.*;
+import no.mentordigital.etlmodel.ans.image.Image;
+import no.mentordigital.etlmodel.polopoly.PolopolyDoc;
+import no.mentordigital.etlmodel.polopoly.PolopolyModel;
 import org.junit.Test;
 import org.mapstruct.factory.Mappers;
 
@@ -9,8 +10,6 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.Stream;
 
 public class TestPolopolyToArcTransform {
@@ -27,36 +26,11 @@ public class TestPolopolyToArcTransform {
         }
 
         String polopolyData = contentBuilder.toString();
-        Doc sourceDoc = new Gson().fromJson(polopolyData, Doc.class);
-        DocData polopolyModel = sourceDoc.get_data();
+        PolopolyDoc sourceDoc = new Gson().fromJson(polopolyData, PolopolyDoc.class);
+        PolopolyModel polopolyModel = sourceDoc.get_data();
 
-        ArcImage arcImage = Mappers.getMapper(ImageMapper.class).mapArcImage(polopolyModel);
+        Image arcImage = Mappers.getMapper(ImageMapper.class).mapArcImage(polopolyModel);
 
         System.out.println("Transformed Arc Image ANS: " + new Gson().toJson(arcImage));
-    }
-
-    @Test
-    public void testInheritance(){
-
-        Map<String,Object> map = new HashMap();
-        map.put("childOrder","Order123");
-        map.put("childTemplate","Template123");
-        map.put("childType","DATA");
-
-        Source source = Source.builder()
-                        .sourceId("456")
-                        .sourceNumber(1234)
-                        .sourceStatus(false)
-                        .childPlace("Dhaka")
-                        .childStatus(true)
-                        .childTitle("Try")
-                        .sourceMap(map)
-                        .task(Task.builder().taskName("Task123").build())
-                        .build();
-
-
-        Child child = Mappers.getMapper(ChildMapper.class).mapChild(source);
-
-        System.out.println("Transformed child object: " + new Gson().toJson(child));
     }
 }

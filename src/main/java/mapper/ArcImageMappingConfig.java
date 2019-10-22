@@ -1,7 +1,7 @@
 package mapper;
 
-import model.ArcImage;
-import model.DocData;
+import no.mentordigital.etlmodel.ans.image.Image;
+import no.mentordigital.etlmodel.polopoly.PolopolyModel;
 import org.mapstruct.InheritConfiguration;
 import org.mapstruct.MapperConfig;
 import org.mapstruct.MappingTarget;
@@ -10,5 +10,5 @@ import org.mapstruct.MappingTarget;
 public interface ArcImageMappingConfig extends ArcBaseContentMappingConfig{
 
     @InheritConfiguration(name = "mapArcBaseContent")
-    void mapArcImage(DocData docData, @MappingTarget ArcImage arcImage);
+    void mapArcImage(PolopolyModel polopolyModel, @MappingTarget Image arcImage);
 }

@@ -1,7 +1,7 @@
 package mapper;
 
-import model.ArcBaseContent;
-import model.DocData;
+import no.mentordigital.etlmodel.ans.BaseContent;
+import no.mentordigital.etlmodel.polopoly.PolopolyModel;
 import org.mapstruct.MapperConfig;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
@@ -18,5 +18,5 @@ public interface ArcBaseContentMappingConfig {
             @Mapping(target="createdDate",source = "meta", qualifiedBy = MapUtil.CreationTime.class),
             @Mapping(target="lastUpdatedDate",source = "meta", qualifiedBy = MapUtil.ModificationTime.class)
     })
-    void mapArcBaseContent(DocData docData, @MappingTarget ArcBaseContent arcBaseContent);
+    void mapArcBaseContent(PolopolyModel polopolyModel, @MappingTarget BaseContent baseContent);
 }

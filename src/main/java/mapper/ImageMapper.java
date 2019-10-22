@@ -1,7 +1,7 @@
 package mapper;
 
-import model.ArcImage;
-import model.DocData;
+import no.mentordigital.etlmodel.ans.image.Image;
+import no.mentordigital.etlmodel.polopoly.PolopolyModel;
 import org.mapstruct.InheritConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -23,5 +23,5 @@ public interface ImageMapper {
             @Mapping(target="credits.by",source = "aspects", qualifiedBy = MapUtil.Photographer.class),
             @Mapping(target="additionalProperties",source = "aspects", qualifiedBy = MapUtil.ImageSourcePublicUrl.class)
     })
-    ArcImage mapArcImage(DocData docData);
+    Image mapArcImage(PolopolyModel polopolyModel);
 }

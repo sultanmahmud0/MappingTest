@@ -1,11 +1,11 @@
 package utility;
 
-import enums.ArcContentType;
-import enums.ArcLanguageSpec;
-import enums.PolopolyContentType;
-import model.ArcCreditsBy;
-import model.Aspect;
-import model.Meta;
+import no.mentordigital.etlmodel.ans.image.CreditsBy;
+import no.mentordigital.etlmodel.enums.ArcContentType;
+import no.mentordigital.etlmodel.enums.ArcLanguageSpec;
+import no.mentordigital.etlmodel.enums.PolopolyContentType;
+import no.mentordigital.etlmodel.polopoly.Aspect;
+import no.mentordigital.etlmodel.polopoly.Meta;
 import org.mapstruct.Qualifier;
 
 import java.lang.annotation.ElementType;
@@ -146,10 +146,10 @@ public class MapUtil {
     public @interface Photographer { }
 
     @Photographer
-    public ArcCreditsBy[] photographer(Map<String, Aspect> aspectMap){
+    public CreditsBy[] photographer(Map<String, Aspect> aspectMap){
         String photoGrapherName = aspectMap.get("contentData").getData().get("photographer").toString();
-        ArcCreditsBy[] byList = new ArcCreditsBy[1];
-        ArcCreditsBy by = ArcCreditsBy.builder()
+        CreditsBy[] byList = new CreditsBy[1];
+        CreditsBy by = CreditsBy.builder()
                         .byline(photoGrapherName)
                         .type(ArcContentType.AUTHOR.getDisplayName())
                         .version("0.10.3")
