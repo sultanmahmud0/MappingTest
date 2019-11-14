@@ -46,7 +46,7 @@
         <dependency>
             <groupId>no.mentordigital</groupId>
             <artifactId>etl-model</artifactId>
-            <version>0.0.11</version>
+            <version>0.0.20</version>
             <type>jar</type>
         </dependency>
     </dependencies>

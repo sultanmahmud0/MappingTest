@@ -1,0 +1,64 @@
+{
+  "id": "policy:18.633",
+  "version": "policy:18.633:1401271596",
+  "meta": {
+    "modificationTime": "1527696376000",
+    "originalCreationTime": "1401271596000"
+  },
+  "aspects": {
+    "contentData": {
+      "data": {
+        "_type": "com.atex.onecms.app.user.UserDataBean",
+        "myOneCMSContent": [],
+        "myOneCMSContentProviderContentId": "contentid/3.1034",
+        "id": "18.633",
+        "surname": "Zetterman",
+        "loginName": "jacobzetterman",
+        "userId": "43186",
+        "workingSites": [{
+          "id": "dagen.se",
+          "name": "dagen.se"
+        }],
+        "firstname": "Jacob",
+        "ldapUser": false,
+        "emailAddress": "jacob.zetterman@dagen.se",
+        "image":"1.10000"
+      },
+      "version": "policy:18.633:1401271596"
+    },
+    "p.InsertionInfo": {
+      "data": {
+        "_type": "p.InsertionInfo",
+        "associatedSites": [],
+        "securityParentId": "contentid/policy:2.649"
+      },
+      "version": "policy:18.633:1401271596"
+    },
+    "p.Inbox": {
+      "data": {
+        "_type": "p.Inbox",
+        "showInInbox": false
+      },
+      "version": "policy:18.633:1401271596"
+    },
+    "atex.Aliases": {
+      "data": {
+        "_type": "atex.Aliases",
+        "aliases": {
+          "externalId_type": "java.lang.String",
+          "externalId": "43186"
+        }
+      },
+      "version": "policy:18.633:1401271596"
+    },
+    "p.ContentState": {
+      "data": {
+        "_type": "p.ContentState",
+        "deleted": false,
+        "moderationState": "pubp",
+        "online": true
+      },
+      "version": "policy:18.633:1401271596"
+    }
+  }
+}

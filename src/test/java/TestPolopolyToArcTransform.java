@@ -1,4 +1,6 @@
 import com.google.gson.Gson;
+import mapper.Author;
+import mapper.AuthorMapper;
 import mapper.ImageMapper;
 import no.mentordigital.etlmodel.ans.image.Image;
 import no.mentordigital.etlmodel.polopoly.PolopolyDoc;
@@ -32,5 +34,24 @@ public class TestPolopolyToArcTransform {
         Image arcImage = Mappers.getMapper(ImageMapper.class).mapArcImage(polopolyModel);
 
         System.out.println("Transformed Arc Image ANS: " + new Gson().toJson(arcImage));
+    }
+
+    @Test
+    public void testAuthorTransform() throws Exception{
+
+        StringBuilder contentBuilder = new StringBuilder();
+        String filePath = Paths.get(getClass().getClassLoader().getResource("polopolyAuthor.json").toURI()).toFile().getPath();
+        try (Stream<String> stream = Files.lines(Paths.get(filePath), StandardCharsets.UTF_8)) {
+            stream.forEach(s -> contentBuilder.append(s).append("\n"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String polopolyData = contentBuilder.toString();
+        PolopolyModel polopolyModel = new Gson().fromJson(polopolyData, PolopolyModel.class);
+
+        Author arcAuthor = Mappers.getMapper(AuthorMapper.class).mapArcAuthor(polopolyModel);
+
+        System.out.println("Transformed Arc Author ANS: " + new Gson().toJson(arcAuthor));
     }
 }

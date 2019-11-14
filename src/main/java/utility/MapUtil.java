@@ -1,6 +1,7 @@
 package utility;
 
 import no.mentordigital.etlmodel.ans.image.CreditsBy;
+import no.mentordigital.etlmodel.ans.image.Image;
 import no.mentordigital.etlmodel.enums.ArcContentType;
 import no.mentordigital.etlmodel.enums.ArcLanguageSpec;
 import no.mentordigital.etlmodel.enums.PolopolyContentType;
@@ -45,6 +46,9 @@ public class MapUtil {
 
             case ArticleBean:
                 return ArcContentType.STORY.getDisplayName();
+
+            case UserDataBean:
+                return ArcContentType.AUTHOR.getDisplayName();
         }
 
         return null;
@@ -57,6 +61,10 @@ public class MapUtil {
 
     @Language
     public String language(Map<String, Aspect> aspectMap){
+
+        if(!aspectMap.containsKey("atex.Metadata"))
+            return null;
+
         String siteTaxonomy = aspectMap.get("atex.Metadata").getData().get("taxonomyIds").toString();
         String siteExt = siteTaxonomy.substring(siteTaxonomy.lastIndexOf(".")+1);
 
@@ -174,6 +182,47 @@ public class MapUtil {
         propertiesMap.put("originalUrl",sourceUrl);
 
         return propertiesMap;
+    }
+
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface ImageReference{ }
+
+    @ImageReference
+    public Image imageReference(Map<String, Aspect> aspectMap){
+        Object object = aspectMap.get("contentData").getData().get("image");
+        if(Objects.isNull(object)) return null;
+
+        String imageId = object.toString();
+        Image image = new Image();
+        image.set_id(imageId);
+
+        return image;
+    }
+
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface FirstName{ }
+
+    @FirstName
+    public String firstName(Map<String, Aspect> aspectMap){
+        Object object = aspectMap.get("contentData").getData().get("firstname");
+        if(Objects.isNull(object)) return null;
+        return object.toString();
+    }
+
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface LastName{ }
+
+    @LastName
+    public String lastName(Map<String, Aspect> aspectMap){
+        Object object = aspectMap.get("contentData").getData().get("surname");
+        if(Objects.isNull(object)) return null;
+        return object.toString();
     }
 
     private static String generateDateFromTimeString(String timeString){
