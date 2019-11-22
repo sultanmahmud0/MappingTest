@@ -11,7 +11,6 @@ import utility.MapUtil;
 @MapperConfig(unmappedTargetPolicy = org.mapstruct.ReportingPolicy.IGNORE,uses = MapUtil.class)
 public interface ArcBaseContentMappingConfig {
     @Mappings({
-            @Mapping(target="_id", ignore = true),
             @Mapping(target="version", expression = "java(new String(\"0.10.3\"))"),
             @Mapping(target="type", source = "aspects", qualifiedBy = MapUtil.Type.class),
             @Mapping(target="language", source = "aspects", qualifiedBy = MapUtil.Language.class),

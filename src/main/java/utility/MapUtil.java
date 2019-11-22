@@ -225,6 +225,18 @@ public class MapUtil {
         return object.toString();
     }
 
+    @Qualifier
+    @Target(ElementType.METHOD)
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface ID{ }
+
+    @ID
+    public String getUniqueId(Map<String, Aspect> aspectMap){
+        Object object = aspectMap.get("contentData").getData().get("contentId");
+        if(Objects.isNull(object)) return null;
+        return object.toString().replaceAll("\\.","_");
+    }
+
     private static String generateDateFromTimeString(String timeString){
         long timeInMills = Long.parseLong(timeString);
         Date creationDate = new Date(timeInMills);

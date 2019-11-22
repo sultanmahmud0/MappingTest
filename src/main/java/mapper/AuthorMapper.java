@@ -14,6 +14,7 @@ public interface AuthorMapper {
 
     @InheritConfiguration(name = "mapArcBaseContent")
     @Mappings({
+            @Mapping(target="_id", source = "aspects", qualifiedBy = MapUtil.ID.class),
             @Mapping(target="image",source = "aspects", qualifiedBy = MapUtil.ImageReference.class),
             @Mapping(target="firstName",source = "aspects", qualifiedBy = MapUtil.FirstName.class),
             @Mapping(target="lastName",source = "aspects", qualifiedBy = MapUtil.LastName.class)

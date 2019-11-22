@@ -1,55 +1,61 @@
 {
-  "id": "policy:18.633",
-  "version": "policy:18.633:1401271596",
+  "id": "policy:18.634",
+  "version": "policy:18.634:1401271596",
   "meta": {
-    "modificationTime": "1527696376000",
+    "modificationTime": "1566398743000",
     "originalCreationTime": "1401271596000"
   },
   "aspects": {
     "contentData": {
       "data": {
-        "_type": "com.atex.onecms.app.user.UserDataBean",
-        "myOneCMSContent": [],
-        "myOneCMSContentProviderContentId": "contentid/3.1034",
-        "id": "18.633",
-        "surname": "Zetterman",
-        "loginName": "jacobzetterman",
-        "userId": "43186",
+        "_type": "no.mentormedier.user.MentorUserDataBean",
+        "linkedin": "https://www.linkedin.com/pub/elisabeth-sandlund/16/994/704",
+        "instagram": "https://instagram.com/elisabeth.sandlund",
+        "image": "contentid/1.402045",
+        "phoneNumber": "08-619 24 73",
+        "lastName": "Sandlund",
+        "title": "Opinionsredaktör",
+        "lead": "Elisabeth Sandlund är opinionsredaktör på Dagen sedan 2010 och har tidigare varit chefredaktör för tidningen. Hon skriver såväl ledare som ledarkrönikor om det mesta som rör sig i samhälle och kyrka.",
+        "surname": "Sandlund",
+        "loginName": "elisabethsandlund",
+        "userId": "43187",
         "workingSites": [{
           "id": "dagen.se",
           "name": "dagen.se"
         }],
-        "firstname": "Jacob",
+        "firstname": "Elisabeth",
         "ldapUser": false,
-        "emailAddress": "jacob.zetterman@dagen.se",
-        "image":"1.10000"
+        "emailAddress": "elisabeth.sandlund@dagen.se",
+        "myOneCMSContent": [],
+        "myOneCMSContentProviderContentId": "contentid/3.5256",
+        "contentId":"18.634"
       },
-      "version": "policy:18.633:1401271596"
+      "version": "policy:18.634:1401271596"
     },
     "p.InsertionInfo": {
       "data": {
         "_type": "p.InsertionInfo",
-        "associatedSites": [],
-        "securityParentId": "contentid/policy:2.649"
+        "securityParentId": "contentid/policy:2.649",
+        "associatedSites": []
       },
-      "version": "policy:18.633:1401271596"
+      "version": "policy:18.634:1401271596"
     },
     "p.Inbox": {
       "data": {
         "_type": "p.Inbox",
         "showInInbox": false
       },
-      "version": "policy:18.633:1401271596"
+      "version": "policy:18.634:1401271596"
     },
     "atex.Aliases": {
       "data": {
         "_type": "atex.Aliases",
         "aliases": {
           "externalId_type": "java.lang.String",
-          "externalId": "43186"
+          "externalId": "43187"
         }
       },
-      "version": "policy:18.633:1401271596"
+      "version": "policy:18.634:1401271596"
     },
     "p.ContentState": {
       "data": {
@@ -58,7 +64,7 @@
         "moderationState": "pubp",
         "online": true
       },
-      "version": "policy:18.633:1401271596"
+      "version": "policy:18.634:1401271596"
     }
   }
 }
